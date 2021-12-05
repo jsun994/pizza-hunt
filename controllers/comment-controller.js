@@ -62,6 +62,7 @@ const commentController = {
       })
       .catch(err => res.json(err));
   },
+
   // remove reply
   removeReply({ params }, res) {
     Comment.findOneAndUpdate(
@@ -73,4 +74,5 @@ const commentController = {
       .catch(err => res.json(err));
   }
 };
+
 module.exports = commentController;
